@@ -1,0 +1,158 @@
+html, body {
+  font-family: "Manrope", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.button {
+  display: inline-block;
+  line-height: 4.125rem;
+  padding: 0 2.5rem;
+  border-radius: 12px;
+  background-color: #FF6433;
+  color: #ffffff;
+}
+
+.header {
+  height: 937px;
+}
+.header__inner {
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  row-gap: 5.375rem;
+}
+.header__top-menu {
+  display: grid;
+  grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
+  grid-template-columns: max-content 1fr max-content;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  align-items: center;
+  height: 100%;
+}
+.header__nav-list {
+  display: flex;
+  justify-content: end;
+}
+.header__nav-item {
+  margin-right: 2.625rem;
+  font-weight: 600;
+}
+.header__nav-item:last-child {
+  margin-right: 0.2rem;
+}
+.header__tel-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+.header__tel-box:before {
+  content: " ";
+  background: rgba(147, 145, 145, 0.36);
+  width: 1px;
+  height: 42px;
+  margin-right: 1.875rem;
+}
+.header__tel-icon {
+  background: url("../images/icons/Call-icon-header.svg") center no-repeat, #61C3A1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 14px 0 0;
+}
+.header__tel-inner {
+  white-space: nowrap;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+.header__tel-name {
+  font-weight: 500;
+}
+.header__namber {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.25rem;
+}
+.header__button {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.header__play {
+  font-weight: 500;
+}
+.header__working-item-1 {
+  font-weight: 500;
+  color: #939191;
+}
+.header__working-item-2 {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+/* ============================== HEADER BODY ============================== */
+.header__body-inner {
+  display: grid;
+  grid-template: 59% auto 1fr/repeat(2, 1fr);
+  -moz-column-gap: 4.62rem;
+       column-gap: 4.62rem;
+  height: 100%;
+}
+.header__image-box {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  align-self: center;
+  position: relative;
+}
+.header__title {
+  font-size: 4rem;
+  align-self: end;
+  padding: 0 0 2.125rem 0;
+}
+.header__main-box {
+  padding: 0 0 2.375rem 0;
+}
+.header__button {
+  margin-right: 2.94rem;
+}
+.header__play {
+  display: inline-block;
+}
+.header__play svg {
+  margin-right: 0.5rem;
+  transform: translateY(23%);
+}
+.header__working {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
+  -moz-column-gap: 0.81rem;
+       column-gap: 0.81rem;
+  word-spacing: 1.2px;
+}
+.header__main-icon {
+  background: url("../images/icons/Clock-icon-header.svg") center no-repeat;
+  width: 31px;
+  height: 31px;
+  transform: translateY(23%);
+}
+.header__working-item-1 {
+  margin-bottom: 0.75rem;
+}/*# sourceMappingURL=style.css.map */

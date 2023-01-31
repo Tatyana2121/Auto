@@ -1,0 +1,106 @@
+
+.header
+  height: 937px
+  &__inner
+    display: grid
+    grid-template-rows: 90px 1fr		
+    //justefy-items: center
+    //justify-content: center
+    //justify-self: center
+    row-gap: 5.375rem
+  &__top-menu 
+    display: grid
+    grid-template-columns: max-content 1fr max-content
+    column-gap: 2rem
+    align-items: center   
+    height: 100%  
+    //margin-bottom: 20px
+  &__nav-list 
+    display: flex
+    justify-content: end        
+  &__nav-item
+    margin-right: 2.625rem
+    font-weight: 600
+    &:last-child
+      margin-right: 0.2rem  
+  &__tel-box
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: nowrap
+    height: 100%
+    &:before
+        content: " "
+        background: rgba(147, 145, 145, 0.36)
+        width: 1px
+        height: 42px
+        margin-right: 1.875rem
+  &__tel-icon
+    background: url("../images/icons/Call-icon-header.svg") center no-repeat, $color-icon-tel 
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    margin: 0 14px 0 0
+  &__tel-inner
+    white-space: nowrap
+    line-height: 28px
+    letter-spacing: 0.5px
+  &__tel-name 
+    font-weight: 500      
+  &__namber
+    font-weight: 600
+    font-size: 1.125rem
+  &__title
+    font-weight: 700
+    font-size: 4rem
+    line-height: 5.25rem
+  &__button
+    font-weight: 600
+    font-size: 1.125rem
+  &__play 
+    font-weight: 500
+  &__working-item-1
+    font-weight: 500
+    color: $color-copy
+  &__working-item-2
+    font-weight: 600
+    font-size: 1.125rem
+/* ============================== HEADER BODY ============================== */
+.header
+  &__body-inner
+    display: grid
+    grid-template: 59% auto 1fr / repeat(2, 1fr)
+    column-gap: 4.62rem
+    height: 100%
+  &__image-box
+    grid-column: 2 / 3
+    grid-row: 1 / 4
+    align-self: center
+    position: relative
+  
+  &__title
+    font-size: 4rem
+    align-self: end
+    padding: 0 0 2.125rem 0
+  &__main-box 
+    padding: 0 0 2.375rem 0
+  &__button
+    margin-right: 2.94rem       
+  &__play
+    display: inline-block      
+    & svg
+      margin-right: 0.5rem
+      transform: translateY(23%)
+  &__working
+    padding-top: 1rem
+    display: grid
+    grid-template-columns: max-content 1fr
+    column-gap: 0.81rem
+    word-spacing: 1.2px
+  &__main-icon
+    background: url("../images/icons/Clock-icon-header.svg") center no-repeat
+    width: 31px
+    height: 31px
+    transform: translateY(23%)
+  &__working-item-1
+    margin-bottom: 0.75rem
