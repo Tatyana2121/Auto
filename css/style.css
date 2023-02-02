@@ -34,10 +34,8 @@ html, body {
 }
 .header__top-menu {
   display: grid;
-  grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
   grid-template-columns: max-content 1fr max-content;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   align-items: center;
   height: 100%;
 }
@@ -110,8 +108,7 @@ html, body {
 .header__body-inner {
   display: grid;
   grid-template: 59% auto 1fr/repeat(2, 1fr);
-  -moz-column-gap: 4.62rem;
-       column-gap: 4.62rem;
+  column-gap: 4.62rem;
   height: 100%;
 }
 .header__image-box {
@@ -119,6 +116,59 @@ html, body {
   grid-row: 1/4;
   align-self: center;
   position: relative;
+}
+.header__service {
+  display: flex;
+  max-height: 6.375rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  background-color: #ffffff;
+  border-radius: 59px;
+  box-shadow: 0 0 0px 13px rgba(221, 219, 219, 0.353);
+  align-items: center;
+  padding: 14px;
+  position: absolute;
+  top: 5.25rem;
+  left: -1.875rem;
+}
+.header__circle {
+  background: #61C3A1;
+  border-radius: 50%;
+  padding: 16px 13px;
+  color: #ffffff;
+  margin-right: 0.875rem;
+}
+.header__circle > span {
+  font-size: 1rem;
+}
+.header__service-text {
+  margin-right: 1.625rem;
+}
+.header__rating {
+  display: inline-flex;
+  align-items: center;
+  max-height: 6.375rem;
+  background-color: #ffffff;
+  border-radius: 59px;
+  box-shadow: 0 0 0px 13px rgba(221, 219, 219, 0.353);
+  line-height: 24px;
+  position: absolute;
+  top: 29.375rem;
+  left: 19.375rem;
+  padding: 30px 35px 24px 36px;
+}
+.header__account {
+  margin-right: 1rem;
+}
+.header__account-number {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.header__account-text {
+  font-weight: 500;
+  font-size: 1rem;
 }
 .header__title {
   font-size: 4rem;
@@ -141,10 +191,8 @@ html, body {
 .header__working {
   padding-top: 1rem;
   display: grid;
-  grid-template-columns: -webkit-max-content 1fr;
   grid-template-columns: max-content 1fr;
-  -moz-column-gap: 0.81rem;
-       column-gap: 0.81rem;
+  column-gap: 0.81rem;
   word-spacing: 1.2px;
 }
 .header__main-icon {

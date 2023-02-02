@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -38,9 +39,18 @@
                     <div class="header__body">
                         <div class="header__body-inner"> 
                             <div class="header__image-box">
-                                <!-- <div class="header__service">24 <span>hr</span> </div>
-                                <div class="header__rating"></div> -->
                                 <img class="header__image" src="./images/Image-header.jpg" alt="main image">
+                                <div class="header__service">
+                                    <div class="header__circle">24 <span>hr</span></div>
+                                    <p class="header__service-text">Quick service</p>
+                                </div>
+                                <div class="header__rating">
+                                    <div class="header__account">
+                                        <div class="header__account-number">4.5/5</div>
+                                        <div class="header__account-text">Rating</div>
+                                    </div>
+                                    <div class="header__rate" id="rateYo"></div>
+                                </div>
                             </div>
                             <h1 class="header__title">
                                 Get your vehicle service done online at one place
@@ -75,18 +85,23 @@
                 </div>
             </div>    
         </header> 
-        <section class="offer"></section>
-        <section class="process"></section>
-        <section class="connection"></section>
-        <section class="statistics"></section>
-        <section class="brands"></section>
-        <section class="blog"></section>
-        <section class="comments"></section>
-        <section class="faq"></section>
-        <section class="get-in-touch"></section>
-        <section class="map"></section>
+        <main>
+            <section class="offer"></section>
+            <section class="process"></section>
+            <section class="connection"></section>
+            <section class="statistics"></section>
+            <section class="brands"></section>
+            <section class="blog"></section>
+            <section class="comments"></section>
+            <section class="faq"></section>
+            <section class="get-in-touch"></section>
+            <section class="map"></section>
+        </main>
         <footer class="footer"> </footer>
     </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

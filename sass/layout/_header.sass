@@ -77,7 +77,51 @@
     grid-row: 1 / 4
     align-self: center
     position: relative
-  
+  &__service
+    display: flex
+    max-height: 6.375rem
+    font-weight: 600
+    font-size: 1.5rem
+    line-height: 36px
+    letter-spacing: -0.03em
+    background-color: $color-text-light
+    border-radius: 59px
+    box-shadow: 0 0 0px 13px rgba(221, 219, 219, 0.353)
+    align-items: center
+    padding: 14px
+    position: absolute
+    top: 5.25rem
+    left: -1.875rem    
+  &__circle
+    background: $color-icon-tel
+    border-radius: 50%
+    padding: 16px 13px
+    color: $color-text-light
+    margin-right: 0.875rem
+    &>span
+      font-size: 1rem
+  &__service-text
+    margin-right: 1.625rem
+  &__rating
+    display: inline-flex
+    align-items: center
+    max-height: 6.375rem
+    background-color: $color-text-light
+    border-radius: 59px
+    box-shadow: 0 0 0px 13px rgba(221, 219, 219, 0.353)
+    line-height: 24px
+    position: absolute
+    top: 29.375rem  
+    left: 19.375rem
+    padding: 30px 35px 24px 36px
+  &__account
+    margin-right: 1rem
+  &__account-number
+    font-weight: 600
+    font-size: 1.5rem
+  &__account-text
+    font-weight: 500
+    font-size: 1rem
   &__title
     font-size: 4rem
     align-self: end
