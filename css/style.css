@@ -1,5 +1,7 @@
 html, body {
   font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  color: #1E1B1B;
 }
 
 .wrapper {
@@ -24,12 +26,20 @@ html, body {
   color: #ffffff;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 3.625rem;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
 .header {
-  height: 937px;
+  height: 58.5rem;
 }
 .header__inner {
   display: grid;
-  grid-template-rows: 90px 1fr;
+  grid-template-rows: 5.625rem 1fr;
   row-gap: 5.375rem;
 }
 .header__top-menu {
@@ -45,7 +55,6 @@ html, body {
 }
 .header__nav-item {
   margin-right: 2.625rem;
-  font-weight: 600;
 }
 .header__nav-item:last-child {
   margin-right: 0.2rem;
@@ -203,4 +212,73 @@ html, body {
 }
 .header__working-item-1 {
   margin-bottom: 0.75rem;
+}
+
+.offer {
+  background-color: #F2F2F2;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  height: 65.75rem;
+}
+.offer__inner {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 128px 0;
+}
+.offer__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.offer__subtitle {
+  margin-bottom: 9px;
+}
+.offer__title {
+  max-width: 53.625rem;
+  display: inline-block;
+}
+.offer__service {
+  display: grid;
+  grid-template: 1fr 1fr/repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.offer__service-icon {
+  margin-bottom: 0.375rem;
+}
+.offer__service-icon > svg path {
+  transition: 0.5s;
+}
+.offer__service-item {
+  display: grid;
+  background-color: #ffffff;
+  text-align: center;
+  height: 14.5rem;
+  align-content: center;
+  transition: 0.5s;
+}
+.offer__service-item:hover {
+  background-color: #FF6433;
+  color: #ffffff;
+}
+.offer__service-item:hover .offer__service-icon > svg path {
+  fill: #ffffff;
+}
+.offer__about {
+  display: flex;
+  align-self: end;
+  padding: 0.25rem 1rem;
+  transition: all 0.5s;
+}
+.offer__about:hover {
+  background-color: #FF6433;
+  padding: 0.25rem 1rem;
+  color: #ffffff;
+}
+.offer__about:hover:hover .offer__about-arrow > svg path {
+  fill: #ffffff;
+}
+.offer__about-text {
+  margin-right: 1rem;
 }/*# sourceMappingURL=style.css.map */
