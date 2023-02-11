@@ -1,0 +1,44 @@
+.blog 
+  padding: 8.25rem 0
+  &__title 
+    margin-bottom: 2.875rem
+  &__filter-box
+    display: flex
+    justify-content: flex-start
+    margin-bottom: 2.875rem
+  &__filter-item
+    margin-right: 2rem
+    &:last-child
+      margin-right: 0
+  &__filter-btn
+    background-color: transparent
+    font-size: 2rem
+    line-height: 48px
+    letter-spacing: -0.03em
+    color: $color-text-dark
+  &__filter-btn--active
+    background-color: $color-orange
+    color: $color-text-light
+    padding: 0 15px
+  &__list 
+    display: grid
+    grid-template: repeat(2, auto) / repeat(3, 1fr)
+    column-gap: 2rem
+    row-gap: 4rem
+  // &__list-item 
+  &__list-image 
+    margin-bottom: 1.5rem
+  &__list-posted 
+    line-height: 28px
+    color: $color-copy
+    margin-bottom: 1rem
+  &__list-title 
+    font-weight: 700
+    font-size: 2rem
+    line-height: 48px
+    letter-spacing: -0.03em
+    color: $color-text-dark
+    margin-bottom: 1rem
+  &__list-text 
+    line-height: 28px
+    color: $color-blog-text
