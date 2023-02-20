@@ -10,7 +10,9 @@
     column-gap: 20px
     row-gap: 2.5rem
     justify-items: center
-    // align-items: center
-    // max-width: 80.875rem
-  // &__image
-  //   padding-left: 10px
+  &__image
+    transition: all .5s
+    &:hover
+      transform: scale(1.1)
+    &:hover svg path
+      fill: $color-orange

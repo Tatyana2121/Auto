@@ -23,4 +23,20 @@ $(function() {
     $(this).addClass('blog__filter-btn--active')
 
   })
+
+  $('.comments__slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+  });
+  $('.comments__arrow-left').on('click', function(e) {
+    e.preventDefault(),
+    $('.comments__slider').slick('slickPrev')
+  })
+  $('.comments__arrow-right').on('click', function(e) {
+    e.preventDefault(),
+    $('.comments__slider').slick('slickNext')
+  })
 })
