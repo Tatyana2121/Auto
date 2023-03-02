@@ -538,6 +538,8 @@ html, body {
 }
 .comments__image {
   grid-row: 1/3;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .comments__name {
   font-size: 1.5rem;
@@ -580,21 +582,22 @@ html, body {
 .comments__slider-arrows {
   display: flex;
   justify-content: flex-end;
-  transition: all 0.3s;
   margin: -2.25rem 0.625rem 0 0;
 }
 .comments__slider-arrow:hover .comments__circle {
   background-color: #1E1B1B;
   transform: scale(1.3, 1.3);
+  transition: all 0.5s;
 }
 .comments__slider-arrow:hover .comments__circle > svg path {
   fill: #ffffff;
+  transition: all 0.3s;
 }
 .comments__circle {
   border-radius: 50%;
   background-color: #ffffff;
   padding: 1rem 0.8125rem;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .comments__arrow-left {
   margin: 0 2.375rem 0 0;
@@ -623,4 +626,80 @@ html, body {
 
 .slick-list {
   margin: 0 -0.875rem;
+}
+
+.faq {
+  background-color: #E2E6E9;
+  padding: 8rem 0rem;
+}
+.faq__title {
+  max-width: 47.5rem;
+  margin: 0rem auto 5.375rem;
+}
+.faq__items {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+.faq__item {
+  background-color: #ffffff;
+  margin: 0rem 0rem 0.75rem 0rem;
+  padding: 2.15rem 0rem 1rem 2.5rem;
+}
+.faq__item:last-child {
+  margin: 0rem 0rem 0rem 0rem;
+}
+.faq__item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem 1rem 0rem;
+}
+.faq__item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #1E1B1B;
+}
+.faq__item-rectangle {
+  width: 52px;
+  height: 48px;
+  background-color: #ff6433;
+  margin: 0rem 2.5rem 0rem 0rem;
+  position: relative;
+}
+.faq__item-rectangle::after {
+  content: "";
+  width: 17px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: calc(50% - 9px);
+}
+.faq__item-rectangle::before {
+  content: "";
+  width: 17px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: calc(50% - 9px);
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+.faq__item--active .faq__item-rectangle::before {
+  transition: all 0.5s;
+  transform: rotate(0deg);
+}
+.faq__item--active .faq__item-text {
+  display: block;
+}
+.faq__item-text {
+  max-width: 41.75rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 175%;
+  color: #939191;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

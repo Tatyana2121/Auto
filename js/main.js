@@ -40,3 +40,24 @@ $(function() {
     $('.comments__slider').slick('slickNext')
   })
 })
+
+//ACCORDION
+let acc = Array.from(document.querySelectorAll('.faq__item'));
+function clearActiveItemMenu(){
+	acc.forEach(function(box){
+    if(box.classList.contains('faq__item--active')){
+      box.classList.remove('faq__item--active');
+    }
+  });
+}
+acc.forEach((box) => {
+  box.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (box.classList.contains('faq__item--active')) {
+      box.classList.remove('faq__item--active');
+    } else {
+      clearActiveItemMenu();
+      box.classList.add('faq__item--active');
+    }
+  })
+})
