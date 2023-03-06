@@ -1,0 +1,87 @@
+.contact
+  margin: 7.5rem 0rem 0rem 0rem
+  &__title
+    margin: 0rem 0rem 3rem 0rem
+    max-width: 31.5rem
+  &__inner
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 8.75rem
+    margin: 0rem 0rem 11.375rem 0rem
+  &__form-col
+    display: flex
+    flex-direction: column
+    margin: 0rem 0rem 3rem 0rem
+  &__form-input
+    width: 100%
+    height: 4.5rem
+    background-color: $color-forms-fields
+    margin: 0rem 0rem 0.25rem 0rem
+    padding: 0rem 0rem 0rem 2.5rem
+    &:last-child
+      margin: 0rem 0rem 0rem 0rem
+    &:placeholder
+      font-weight: 600
+      line-height: 28px
+      color: $color-text-dark
+  &__form-option 
+    appearance: none
+    font-family: 'Manrope', sans-serif
+    line-height: 28px
+    color: $color-text-dark
+  &__info-items 
+    margin: 0rem 0rem 2rem 0rem
+    &:last-child
+      margin: 0rem 0rem 0rem 0rem
+  &__info-title 
+    font-weight: 600
+    line-height: 28px
+    color: $color-text-dark
+    opacity: 0.7
+  &__info-text  
+    font-weight: 600
+    font-size: 24px
+    line-height: 36px
+    letter-spacing: -0.03em
+    color: $color-text-dark
+  &__form-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__checkbox-label
+    display: flex
+    font-weight: 600
+    line-height: 24px
+    letter-spacing: -0.03em
+    color: $color-text-dark
+    margin: 0rem 4.5rem 0rem 0rem
+    padding: 0rem 0rem 0rem 1.8rem
+    position: relative
+  &__form-default 
+    position: absolute
+    width: 1px
+    height: 1px 
+    clip: rect(0, 0, 0, 0) 
+    &:checked+.contact__form-custom
+      background: url("../images/icons/check.svg") 50% 50% no-repeat, $color-orange
+      border: 2px solid $color-orange
+  &__form-custom
+    position: absolute
+    top: 10%
+    left: 0
+    width: 1rem
+    height: 1rem
+    border: 2px solid $color-text-dark
+    cursor: pointer
+    
+  &__form-btn
+    flex: 0 0 auto    
+  &__map
+    width: 100%
+    height: 100%
+    margin: 0rem 0rem -10.925rem 0rem
+    filter: grayscale(100%)
+  &__image
+    background: url("../images/Image-contacts.jpg") center no-repeat 
+    width: 100%
+    height: 28rem
