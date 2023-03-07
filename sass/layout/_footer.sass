@@ -1,0 +1,60 @@
+.footer
+  &__top
+    background-color: $color-text-dark
+    opacity: 0.98
+    padding: 8rem 0rem
+  &__top-inner 
+    display: grid
+    grid-template-columns: minmax(auto, 482px) auto
+    column-gap: 12rem
+  &__title
+    margin: 0rem 0rem 4rem 0rem
+    color: $color-text-light
+    font-weight: 500
+  &__socials 
+    display: flex
+  &__socials-item 
+    margin: 0rem 1.5rem 0rem 0rem
+    &:last-child
+      margin: 0rem 0rem 0rem 0rem
+  &__socials-link 
+    transition: all .5s
+    &:hover path
+      fill: $color-orange
+  &__info-items
+    margin: 0rem 0rem 2rem 0rem
+    &:last-child
+      margin: 0rem 0rem 0rem 0rem
+  &__info-title 
+    font-weight: 500
+    font-size: 18px
+    line-height: 175%
+    color: $color-text-light
+    opacity: 0.6
+  &__info-text 
+    font-weight: 500
+    font-size: 24px
+    line-height: 36px
+    letter-spacing: -0.03em
+    color: $color-text-light
+  &__bottom     
+    background-color: $color-text-dark
+    padding: 4rem 0rem 
+  &__menu 
+    display: flex
+    justify-content: space-between
+  &__nav-list 
+    display: flex
+  &__nav-item     
+    margin: 0rem 2.5rem 0rem 0rem    
+    &:last-child
+      margin: 0rem 0rem 0rem 0rem
+  &__nav-link
+    line-height: 28px
+    color: $color-text-light
+    transition: all .5s
+    &:hover
+      color: $color-orange
+  &__copy 
+    line-height: 28px
+    color: $color-copy
