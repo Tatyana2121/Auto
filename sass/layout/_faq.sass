@@ -4,8 +4,6 @@
   &__title
     max-width: 47.5rem
     margin: 0rem auto 5.375rem
-
-
   &__items
     max-width: 56rem
     margin: 0 auto
@@ -22,14 +20,13 @@
     margin: 0rem 0rem 1rem 0rem
   &__item-title
     font-weight: 500
-    font-size: 24px
-    line-height: 36px
+    font-size: 1.5rem
+    line-height: 2.25rem
     letter-spacing: -0.03em
-    color: $color-text-dark 
-    
+    color: $color-text-dark     
   &__item-rectangle
-    width: 52px
-    height: 48px
+    width: 3.25rem
+    height: 3rem
     background-color: $color-orange
     margin: 0rem 2.5rem 0rem 0rem
     position: relative
@@ -63,4 +60,15 @@
     line-height: 175%
     color: $color-copy
     display: none
-    
+@media ( max-width: 700px)
+  .faq 
+    padding: 6rem 0rem 
+    &__title
+      margin: 0rem auto 4rem
+    &__item 
+      margin: 0rem 0rem 0.75rem 0rem
+      padding: 1.5rem 0rem 0.5rem 1.5rem
+    &__item-title
+      margin: 0rem .5rem 0rem 0rem
+    &__item-rectangle
+      margin: 0rem 1.5rem 0rem 0rem

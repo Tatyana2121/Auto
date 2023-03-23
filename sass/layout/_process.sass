@@ -1,5 +1,5 @@
 .process 
-  padding: 130px 0
+  padding: 8.125rem 0
   &-wrap
     display: grid
     grid-template-columns: 1fr 1fr
@@ -21,7 +21,7 @@
   &__box 
     display: flex
   &__box-number
-    margin: 6px 28px 0 0
+    margin: 0.375rem 1.75rem 0 0
     position: relative
   &__box-number-num
     font-size: 2rem 
@@ -41,9 +41,35 @@
     font-size: 2rem 
     line-height: 3rem 
     letter-spacing: -0.02em
-    margin-bottom: 8px
+    margin-bottom: 0.5rem
   &__box-desc
     font-weight: 600
     font-size: 1.125rem 
     line-height: 2rem 
     opacity: 0.6
+@media ( max-width: 1000px)
+  .process 
+      &__right
+        grid-template-rows: auto auto auto
+        row-gap: 1.5rem   
+@media ( max-width: 800px)
+  .process 
+    &-wrap
+      grid-template-columns: 1fr
+      gap: 3rem   
+    &__title 
+      max-width: 40rem     
+    &__text
+      max-width: 40rem 
+    &__box-content 
+      max-width: 33rem
+    &__box-number-line svg
+      height: 45px
+@media ( max-width: 550px)
+  .process 
+    padding: 6rem 0
+    &__box-number-num 
+      top: 20px
+      left: 1.3rem
+    &__box-number-line svg
+      display: none   

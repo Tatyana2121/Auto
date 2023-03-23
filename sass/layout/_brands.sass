@@ -16,3 +16,24 @@
       transform: scale(1.1)
     &:hover svg path
       fill: $color-orange
+
+@media ( max-width: 1100px)
+  .brands
+    &__inner
+      grid-template: repeat(3, 8rem) / repeat(4, 1fr)
+@media ( max-width: 900px)
+  .brands
+    padding: 6rem 0 2rem 0
+    &__inner
+      grid-template: repeat(4, 5rem) / repeat(3, 1fr)
+@media ( max-width: 700px)
+  .brands
+    &__inner
+      grid-template: repeat(5, 5rem) / repeat(2, 1fr)
+@media ( max-width: 550px)
+  .brands
+    &__title 
+      font-size: 4rem
+      margin-bottom: 4rem
+    &__inner
+      grid-template: repeat(10, 5rem) / 1fr

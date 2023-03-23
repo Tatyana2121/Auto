@@ -5,6 +5,7 @@
   &__filter-box
     display: flex
     justify-content: flex-start
+    flex-wrap: wrap
     margin-bottom: 2.875rem
   &__filter-item
     margin-right: 2rem
@@ -51,3 +52,21 @@
     line-height: 28px
     padding: 0 6px
     color: $color-blog-text
+@media ( max-width: 900px)
+  .blog 
+    padding: 7rem 0
+    &__list 
+      grid-template: repeat(3, auto) / repeat(2, 1fr)
+@media ( max-width: 550px)
+  .blog 
+    padding: 5rem 0
+    &__list 
+      grid-template: repeat(6, auto) / repeat(1, 1fr)
+@media ( max-width: 450px)
+  .blog 
+    &__filter-box
+      justify-content: center
+      margin-bottom: 1rem
+    &__filter-item
+      margin-bottom: 1rem
+    

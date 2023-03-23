@@ -12,10 +12,35 @@
   &__text
     max-width: 35.5rem
     font-weight: 700
-    font-size: 48px
+    font-size: 3rem
     line-height: 140%
     letter-spacing: -0.03em
     color: $color-text-light
     margin: 0 0 3rem 5rem
   &__btn
     margin-left: 3.75rem
+@media ( max-width: 1000px) 
+  .cta
+    height: 100%
+    &__box
+      margin: 0rem 0rem 0rem 1rem
+      max-width: 38rem
+      padding: 4rem 4rem
+    &__text
+      margin: 0 0 3rem 0rem
+    &__btn
+      margin-left: 0
+@media ( max-width: 700px) 
+  .cta
+    &__box
+      margin: 0
+      max-width: 35rem
+      padding: 3rem 4rem
+@media ( max-width: 550px) 
+  .cta
+    background: none
+    &__box
+      margin: 0
+      max-width: 100%
+    .container
+      padding: 0rem 0rem 0rem 0rem

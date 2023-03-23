@@ -3,6 +3,13 @@
   &__inner 
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
+
+  &__box
+    margin-right: 2rem
+    margin-bottom: 2rem
+    &:last-child
+      margin-right: 0
   &__number 
     font-weight: 700
     font-size: 3.625rem
@@ -16,3 +23,19 @@
     letter-spacing: -0.03em
     color: $color-text-dark
     opacity: 0.7
+@media ( max-width: 900px)
+  .statistics 
+    &__number 
+      font-weight: 600
+      font-size: 3rem
+    &__text 
+      font-weight: 500
+      font-size: 1.5rem
+@media ( max-width: 350px)
+  .statistics 
+    &__box
+      margin-right: 1rem
+    &__number
+      font-size: 2.8rem
+    &__text 
+      font-size: 1.4rem
